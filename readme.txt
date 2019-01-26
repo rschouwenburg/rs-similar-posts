@@ -1,11 +1,11 @@
 === Similar Posts - Best Related Posts Plugin for WordPress ===
-Contributors: shareaholic
+Contributors: Robert Schouwenburg, shareaholic
 Tags: related posts, similar posts, connected posts, related posts widget, linked posts
 Requires at least: 4.0
 Tested up to: 5.0
-Stable tag: 3.0.1
+Stable tag: 4.0.0
 
-Displays a list of related posts similar to the current one based on content, title and/or tags. Works with all themes and is very customizable!
+Fork of original Similar Posts plugin to add support for featured image. Displays a list of related posts similar to the current one based on content, title and/or tags. Works with all themes and is very customizable!
 
 
 == Description ==
@@ -21,11 +21,8 @@ Similar Posts displays a list of posts that are similar or related to the curren
 * output in posts, widgets and RSS
 * over 50 options available
 
+Originally developed by [Shareaholic](http://www.shareaholic.com/).
 Originally developed by [Robert Marsh](http://rmarsh.com/).
-
-If you need a plugin that does all the Related Posts compute processing in the cloud, please check out our other [Related Posts & Products WordPress plugin](https://shrlc.com/yPInQlI).
-
-[Shareaholic Blog](https://www.shareaholic.com/blog) | [Privacy](https://www.shareaholic.com/privacy/) | [Terms](https://www.shareaholic.com/terms/)
 
 == Installation ==
 
@@ -46,15 +43,6 @@ Or if needed, upload manually;
 
 == Frequently Asked Questions ==
 
-= Who is this plugin for? =
-
-For anyone who want to keep visitors longer on their site by giving them more quality, related content when and where they need it - below the article they're currently reading.
-
-= It's not working!!! Arrrrrrrrr =
-
-Read the <a href="http://wordpress.org/support/plugin/similar-posts">support forum</a> rules (no seriously, read them) and then if needed open new a thread.
-
-
 == Screenshots ==
 
 1. General options screen
@@ -66,6 +54,10 @@ Read the <a href="http://wordpress.org/support/plugin/similar-posts">support for
 
 
 == ChangeLog ==
+
+= 4.0.0 (2019-01-26) =
+* fork from original Similar Posts plugin
+* add support for featured image
 
 = 3.0.0 (2018-12-06) =
 * compatability with WordPress 5
