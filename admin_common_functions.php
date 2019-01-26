@@ -137,7 +137,7 @@ function ppl_display_available_tags($plugin_name) {
 		<li title="">{php}</li>
 		<li title="">{postid}</li>
 		<li title="">{postviews}</li>
-		<?php if ($plugin_name === 'similar-posts') { ?>
+		<?php if ($plugin_name === 'rs-similar-posts') { ?>
 			<li title="">{score}</li>
 		<?php } ?>
 		<li title="">{snippet}</li>

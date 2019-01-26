@@ -49,7 +49,6 @@ class admin_subpages {
 	}
 
 	function display_menu() {
-    echo '<a title="Test your site\'s security with Security Ninja" id="ninja" href="https://wpsecurityninja.com/?utm_source=WP%20admin&utm_medium=banner&utm_campaign=Similar%20Posts&utm_content=ninja" target="_blank"><img title="Test your site\'s security with Security Ninja" alt="Test your site\'s security with Security Ninja" src="' . WP_PLUGIN_URL . '/similar-posts/images/ninja.png"></a>';
 		echo "\n<ul id=\"submenu\" class=\"similarposts-tabs-menu\" style=\"display: block\">\n";
 		// for compatibility with WP mu
 		$base = (isset($_SERVER['REDIRECT_URL'])) ? $_SERVER['REDIRECT_URL'] : $_SERVER['PHP_SELF'];

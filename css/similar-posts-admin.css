@@ -51,9 +51,3 @@
 .similarposts-inner-table tr td{
 	border:1px solid #CCC;
 }
-
-#ninja {
-  position: absolute;
-  right: 100px;
-  top: 67px;
-}

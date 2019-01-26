@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Similar Posts
-Plugin URI: https://wordpress.org/plugins/similar-posts/
+Plugin Name: RS Similar Posts
+Plugin URI: https://github.com/rschouwenburg/rs-similar-posts
 Description: Displays a highly configurable list of related posts. Similarity can be based on any combination of word usage in the content, title, or tags.
-Version: 3.0.1
-Author: Shareaholic
-Author URI: https://www.shareaholic.com
-Text Domain: similar-posts
+Version: 4.0.0
+Author: Robert Schouwenburg
+Author URI: https://schouwenburg.com
+Text Domain: rs-similar-posts
 */
 
 
@@ -35,10 +35,10 @@ if ( ! defined( 'WP_PLUGIN_URL' ) )
 if ( ! defined( 'WP_PLUGIN_DIR' ) )
 	define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
 
-if (!defined('CF_LIBRARY')) require(WP_PLUGIN_DIR.'/similar-posts/common_functions.php');
-if (!defined('ACF_LIBRARY')) require(WP_PLUGIN_DIR.'/similar-posts/admin_common_functions.php');
-if (!defined('OT_LIBRARY')) require(WP_PLUGIN_DIR.'/similar-posts/output_tags.php');
-if (!defined('ADMIN_SUBPAGES_LIBRARY')) require(WP_PLUGIN_DIR.'/similar-posts/admin-subpages.php');
+if (!defined('CF_LIBRARY')) require(WP_PLUGIN_DIR.'/rs-similar-posts/common_functions.php');
+if (!defined('ACF_LIBRARY')) require(WP_PLUGIN_DIR.'/rs-similar-posts/admin_common_functions.php');
+if (!defined('OT_LIBRARY')) require(WP_PLUGIN_DIR.'/rs-similar-posts/output_tags.php');
+if (!defined('ADMIN_SUBPAGES_LIBRARY')) require(WP_PLUGIN_DIR.'/rs-similar-posts/admin-subpages.php');
 
 if (!defined('DSEP')) define('DSEP', DIRECTORY_SEPARATOR);
 if (!defined('POST_PLUGIN_LIBRARY')) SimilarPosts::install_post_plugin_library();
@@ -68,7 +68,7 @@ class SimilarPosts {
 
   // add settings link to plugins page
   static function plugin_action_links($links) {
-    $settings_link = '<a href="' . admin_url('options-general.php?page=similar-posts') . '" title="Settings for Similar Posts">Settings</a>';
+    $settings_link = '<a href="' . admin_url('options-general.php?page=rs-similar-posts') . '" title="Settings for Similar Posts">Settings</a>';
 
     array_unshift($links, $settings_link);
 

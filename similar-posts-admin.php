@@ -3,7 +3,7 @@
 // Admin stuff for Similar Posts Plugin, Version 2.6.2.0
 
 function similar_posts_option_menu() {
-	add_options_page(__('Similar Posts Options', 'similar_posts'), __('Similar Posts', 'similar_posts'), 'edit_theme_options', 'similar-posts', 'similar_posts_options_page');
+	add_options_page(__('Similar Posts Options', 'similar_posts'), __('Similar Posts', 'similar_posts'), 'edit_theme_options', 'rs-similar-posts', 'similar_posts_options_page');
 }
 
 add_action('admin_menu', 'similar_posts_option_menu', 1);
@@ -52,7 +52,7 @@ function similar_posts_options_page(){
 }
 
 function similar_posts_admin_footer() {
-	ppl_admin_footer(str_replace('-admin', '', __FILE__), "similar-posts");
+	ppl_admin_footer(str_replace('-admin', '', __FILE__), "rs-similar-posts");
 
 }
 
