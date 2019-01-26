@@ -604,6 +604,14 @@ function oth_process($w, $h) {
 	return 'oth_image_size_' . $table[oth_test($w)][oth_test($h)];
 }
 
+function otf_featured($option_key, $result, $ext) {
+	// use featured image if there is one
+	if (has_post_thumbnail( $result ) ) {
+		$imagetag = get_the_post_thumbnail ( $result );
+		return $imagetag;
+	}
+}
+
 function otf_image($option_key, $result, $ext) {
 	// extract any image tags
 	$content = $result->post_content;
